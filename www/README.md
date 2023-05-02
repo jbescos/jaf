@@ -20,8 +20,11 @@ Jakarta Activation is used for data content handling by:
 
 # <a name="Latest_News"></a>Latest News
 
-## February 08, 2023 - Jakarta Activation 2.1.2 Final Release ##
-A bug fixing compatibility with package-info in Java SE 8.
+## April 28, 2023 - Jakarta Activation 2.1.2 Final Release ##
+
+The 2.1.2 release is the bug fix release which adds missing
+javadoc description to `jakarta.activation.MimeTypeEntry` `get` methods
+and fixes class file version in `package-info`.
 
 ## January 11, 2023 - Jakarta Activation 2.1.1 Final Release ##
 

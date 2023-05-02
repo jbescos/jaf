@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997, 2021 Oracle and/or its affiliates. All rights reserved.
+ * Copyright (c) 1997, 2023 Oracle and/or its affiliates. All rights reserved.
  *
  * This program and the accompanying materials are made available under the
  * terms of the Eclipse Distribution License v. 1.0, which is available at
@@ -21,7 +21,7 @@ public class MimeTypeEntry {
      * Create new {@code MimeTypeEntry}
      *
      * @param mime_type the MIME type string
-     * @param file_ext the file extension
+     * @param file_ext  the file extension
      */
     public MimeTypeEntry(String mime_type, String file_ext) {
         type = mime_type;
@@ -29,6 +29,8 @@ public class MimeTypeEntry {
     }
 
     /**
+     * Get MIME type string
+     *
      * @return the MIME type string
      */
     public String getMIMEType() {
@@ -36,6 +38,8 @@ public class MimeTypeEntry {
     }
 
     /**
+     * Get the file extension
+     *
      * @return the file extension
      */
     public String getFileExtension() {

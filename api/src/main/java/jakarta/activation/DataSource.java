@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997, 2021 Oracle and/or its affiliates. All rights reserved.
+ * Copyright (c) 1997, 2023 Oracle and/or its affiliates. All rights reserved.
  *
  * This program and the accompanying materials are made available under the
  * terms of the Eclipse Distribution License v. 1.0, which is available at
@@ -10,9 +10,9 @@
 
 package jakarta.activation;
 
+import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
-import java.io.IOException;
 
 /**
  * The DataSource interface provides Jakarta Activation
@@ -32,9 +32,9 @@ public interface DataSource {
      * positioned at the beginning of the data.
      *
      * @return an InputStream
-     * @exception	IOException	for failures creating the InputStream
+     * @exception IOException    for failures creating the InputStream
      */
-    public InputStream getInputStream() throws IOException;
+    InputStream getInputStream() throws IOException;
 
     /**
      * This method returns an <code>OutputStream</code> where the
@@ -44,9 +44,9 @@ public interface DataSource {
      * be positioned at the location the data is to be written.
      *
      * @return an OutputStream
-     * @exception	IOException	for failures creating the OutputStream
+     * @exception IOException    for failures creating the OutputStream
      */
-    public OutputStream getOutputStream() throws IOException;
+    OutputStream getOutputStream() throws IOException;
 
     /**
      * This method returns the MIME type of the data in the form of a
@@ -56,7 +56,7 @@ public interface DataSource {
      *
      * @return the MIME Type
      */
-    public String getContentType();
+    String getContentType();
 
     /**
      * Return the <i>name</i> of this object where the name of the object
@@ -67,5 +67,5 @@ public interface DataSource {
      *
      * @return the name of the object.
      */
-    public String getName();
+    String getName();
 }
